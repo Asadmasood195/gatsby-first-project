@@ -25,4 +25,5 @@ jobs:
       run: npm install -g surge
 
     - name: Deploy to Surge
-      run:  surge ./build https://gamica-gatsby.surge.sh/ --token ${{d82c1d5559c454db17c99e1b6a54db12}}
+      run: surge ./ ${{ https://gamica-gatsby.surge.sh/ }} --token ${{d82c1d5559c454db17c99e1b6a54db12}}
+     

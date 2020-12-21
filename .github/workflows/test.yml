@@ -13,8 +13,10 @@ jobs:
               with:
                node-version: 12.x
 
+            - run: npm install 
+            - run: npm run build
             - run: npm install -g surge
             - run: echo "Deploying website"
-            - run: surge ./ gamica-gatsby.surge.sh  --token ${{ secrets.SURGE_TOKEN }} 
+            - run: surge ./build gamica-gatsby.surge.sh  --token ${{ secrets.SURGE_TOKEN }} 
           
             - run: echo "Please visit => ${{ secrets.SURGE_DOMAIN }}"

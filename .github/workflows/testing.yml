@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 8
       - run: npm install -g surge
-      - run: surge ./ ${{ https://gamica-gatsby.surge.sh/ }} --token ${{ d82c1d5559c454db17c99e1b6a54db12 }}
+      - run: surge ./ ${{ gamica-gatsby.surge.sh }} --token ${{ d82c1d5559c454db17c99e1b6a54db12 }}

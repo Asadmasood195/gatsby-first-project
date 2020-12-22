@@ -40,4 +40,4 @@ jobs:
         run: npm install -g surge
         
       - name: deploy surge
-        run: surge ./public http://gatsby-project.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./public http://gamica-gatsby-demo.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
